@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%; 
+    overflow-x: auto;   
+  }
+  
+  /* Full-page repeating background */
+  #background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('images/red_pixel.jpg') repeat;
+    background-size: auto;
+  }
+  
+  /* Vertical, flipped name on left */
+ /* Vertical, flipped name on left */
+ #name {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    color: white;
+    font-family: "Fleur De Leah", cursive;
+    font-size: 300px;
+    z-index: 10;
+    padding: 10px;
+    white-space: nowrap;
+  }
+  
+  #mainimage {
+    position: absolute;
+    top: 50px;
+    right: 0; /* anchor to right side */
+    height: 800px;
+    width: 1400px;
+    background: url('images/placeholder.png') no-repeat center center;
+    background-size: cover;
+    background-color: green;
+    z-index: 5;
+  }
+  
+
+  #about-me {
+    padding-top: 1200px; /* force vertical height */
+    color: white;
+  }
+  
