@@ -26,7 +26,8 @@ html, body {
   #name {
     position: absolute;
     top: 310px;
-    left: 2%;
+    left: 50%;              
+    transform: translateX(-50%); 
     color: white;
     font-family: "Fleur De Leah", cursive;
     font-size: 450px;
@@ -50,6 +51,10 @@ html, body {
     background: url('images/mainimage.png') no-repeat center center;
     background-size: cover;
     z-index: 5;
+  }
+  .content {
+    display: flex;
+    width: 100vw;
   }
   
   .work-examples-container {
@@ -75,36 +80,60 @@ html, body {
   .work-item img {
     width: 75%;
     height: auto;
-    
-    /*silver glow */
-    /* box-shadow: 
-      0 0 10px silver,
-      0 0 20px silver,
-      0 0 30px silver; */
   }
   
   .work-item h1 {
     color: lightpink;
     margin-top: 1px;
     margin-bottom: 0px;
-    font-family: font-family: "Advent Pro", sans-serif;
+    font-family: sans-serif;
+    font-style: italic;
   }
+  
   .work-item p {
     color: lightpink;
     margin-top: 0px;
-    font-family: font-family: "Advent Pro", sans-serif;
+    font-family:sans-serif;
+    font-style: italic;
     font-size: 16px;
     font-weight: 100;
-    width: 75%;           /* Match image width */
-    margin: 0 auto;        /* Center horizontally */
-    text-align: center;  
-
-  }
-
- 
-  #about-me {
-    color: white;
-    margin-top: 100px;
+    width: 75%;
+    margin: 0 auto;
     text-align: center;
   }
+  
+  .bio-container {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end; /* push content to the right */
+    padding-right: 5vw;        /* optional spacing from right edge */
+  }
+  
+  #about-me h1 {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: lightpink;
+    font-size: 100px;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+    white-space: nowrap;
+    margin-bottom: 0px;
+  }
+
+  #about-me p {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: lightpink;
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: italic;
+    margin-top: 0px;
+  }
+  
   
