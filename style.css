@@ -17,32 +17,33 @@ html, body {
     background-size: auto;
   }
   
-  /* Vertical, flipped name on left */
- /* Vertical, flipped name on left */
  #name {
     position: absolute;
-    top: 50px;
-    left: 50px;
-    writing-mode: vertical-lr;
-    text-orientation: mixed;
-    transform: rotate(180deg);
+    top: 310px;
+    left: 2%;
     color: white;
     font-family: "Fleur De Leah", cursive;
-    font-size: 300px;
+    font-size: 450px;
     z-index: 10;
     padding: 10px;
     white-space: nowrap;
+    opacity: 0.7; 
+    /* silver glow */
+    text-shadow:
+      0 0 10px silver,
+      0 0 20px silver,
+      0 0 30px silver;
   }
   
   #mainimage {
     position: absolute;
-    top: 50px;
-    right: 0; /* anchor to right side */
+    top: 30px;
+    left: 50%;              
+    transform: translateX(-50%); 
     height: 800px;
-    width: 1400px;
-    background: url('images/placeholder.png') no-repeat center center;
+    width: 800px;
+    background: url('images/mainimage.png') no-repeat center center;
     background-size: cover;
-    background-color: green;
     z-index: 5;
   }
   
