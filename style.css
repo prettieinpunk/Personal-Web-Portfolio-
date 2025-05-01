@@ -147,25 +147,27 @@ html, body {
   
   .about-box {
     width: 100%; /* Now matches #about-me width */
-    background-color: rgba(255, 182, 193, 0.3);
-    border: 1px solid lightpink;
     margin-top: 40px;
     text-align: center;
     font-family: sans-serif;
     font-style: italic;
     color: lightpink;
     font-size: 18px;
-    line-height: 30px;
   }
 
   #badges {
+    background-color: rgba(255, 182, 193, 0.3);
+    border: 1px solid lightpink;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     height: 550px;
-    margin-top: 15px; 
-    margin-bottom: 15px; 
+    margin-top: 30px;  
+    margin-bottom: 30px; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 30px;
   }
 
   #gif {
@@ -180,9 +182,35 @@ html, body {
   }
   
   #socials {
-    height: 500px;
-
+    height: 250px;
+    background: none;
+    border: none;
+    margin-top: 100px;
   }
   
-  
-  
+  #socials ul {
+    list-style-type: none; 
+    padding: 0; 
+    text-align: center; 
+    }
+
+  #socials li {
+    margin-bottom: 10px;
+    }
+
+  #socials a {
+    text-decoration: none; 
+    color: lightpink; 
+    font-family: sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    text-transform: lowercase;
+    }
+
+   #socials a:hover {
+    color: lightpink; 
+    text-shadow:
+      0 0 10px silver,
+      0 0 20px silver,
+      0 0 30px silver;
+    }
