@@ -135,5 +135,54 @@ html, body {
     font-style: italic;
     margin-top: 0px;
   }
+
+  .extra-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 60px;
+    width: 100%;
+  }
+  
+  .about-box {
+    width: 100%; /* Now matches #about-me width */
+    background-color: rgba(255, 182, 193, 0.3);
+    border: 1px solid lightpink;
+    margin-top: 40px;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+    color: lightpink;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  #badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    height: 550px;
+    margin-top: 15px; 
+    margin-bottom: 15px; 
+  }
+
+  #gif {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+  
+  #gif img {
+    height: auto;
+    width: 300px;
+  }
+  
+  #socials {
+    height: 500px;
+
+  }
+  
   
   
