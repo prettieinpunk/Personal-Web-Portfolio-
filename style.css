@@ -6,7 +6,6 @@ html, body {
     overflow-x: auto;   
   }
   
-  /* Full-page repeating background */
   #background {
     position: fixed;
     top: 0;
@@ -15,9 +14,16 @@ html, body {
     height: 100vh;
     background: url('images/red_pixel.jpg') repeat;
     background-size: auto;
+    z-index: -1;
   }
   
- #name {
+  #hero {
+    position: relative;
+    height: 1000px;
+    z-index: 1;
+  }
+  
+  #name {
     position: absolute;
     top: 310px;
     left: 2%;
@@ -28,7 +34,6 @@ html, body {
     padding: 10px;
     white-space: nowrap;
     opacity: 0.7; 
-    /* silver glow */
     text-shadow:
       0 0 10px silver,
       0 0 20px silver,
@@ -47,9 +52,59 @@ html, body {
     z-index: 5;
   }
   
+  .work-examples-container {
+    width: 100vw; /* full width of page */
+    display: flex;
+    justify-content: flex-start; /* align contents to the left */
+    padding-left: 5vw; /* small offset from left edge */
+  }
+  
+  .work-examples {
+    width: 50vw; /* occupy left half of screen */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center items inside the left half */
+    gap: 40px;
+  }
+  
+  .work-item {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .work-item img {
+    width: 75%;
+    height: auto;
+    
+    /*silver glow */
+    /* box-shadow: 
+      0 0 10px silver,
+      0 0 20px silver,
+      0 0 30px silver; */
+  }
+  
+  .work-item h1 {
+    color: lightpink;
+    margin-top: 1px;
+    margin-bottom: 0px;
+    font-family: font-family: "Advent Pro", sans-serif;
+  }
+  .work-item p {
+    color: lightpink;
+    margin-top: 0px;
+    font-family: font-family: "Advent Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    width: 75%;           /* Match image width */
+    margin: 0 auto;        /* Center horizontally */
+    text-align: center;  
 
+  }
+
+ 
   #about-me {
-    padding-top: 1200px; /* force vertical height */
     color: white;
+    margin-top: 100px;
+    text-align: center;
   }
   
