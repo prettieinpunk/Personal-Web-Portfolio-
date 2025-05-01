@@ -12,5 +12,5 @@ document.addEventListener("mousemove", function (e) {
   
 document.addEventListener("DOMContentLoaded", () => {
     const nameEl = document.getElementById("fade-name");
-    nameEl.style.animation = 'fadeInFromTop 2s ease-out forwards';  // Trigger the animation
+    nameEl.style.animation = 'fadeInFromTop 2s ease-out forwards'; 
 });
