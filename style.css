@@ -106,9 +106,8 @@ html, body {
 .bio-container {
     width: 100vw;
     display: flex;
-    justify-content: flex-end; /* push content to the right */
-    padding-right: 5vw;        /* optional spacing from right edge */
-}
+    justify-content: flex-end; 
+    padding-right: 5vw; }
 
 #about-me h1 {
     width: 25vw;
@@ -245,18 +244,18 @@ html, body {
 }
 
 #fade-name {
-    opacity: 0;  /* Start as invisible */
-    transform: translateY(-50px);  /* Start above the original position */
-    animation: fadeInFromTop 2s ease-out forwards;  /* Fade and move in over 2 seconds */
+    opacity: 0;  
+    transform: translateY(-50px);  
+    animation: fadeInFromTop 2s ease-out forwards;  
 }
 
 @keyframes fadeInFromTop {
     0% {
         opacity: 0;
-        transform: translateY(-50px);  /* Start off-screen above */
+        transform: translateY(-50px);  
     }
     100% {
         opacity: 1;
-        transform: translateY(0);  /* End at the normal position */
+        transform: translateY(0); 
     }
 }
